@@ -8,3 +8,6 @@ https://react.dev/learn/installation
 
 ### To Create react App fire this query in your terminal
 *npm/npx create-react-app "your react app name"*
+
+you can see first React project 
+where very minimal files are there to understand react project
