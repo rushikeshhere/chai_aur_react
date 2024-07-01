@@ -25,7 +25,6 @@ function App() {
     setButtonDisabled(true);
     alert("You will not allowed to increase more than 20!");
   }
-
   const addValue = () => {
     if (count == 20) {
       disableButton();
