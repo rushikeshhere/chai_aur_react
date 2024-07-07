@@ -6,7 +6,7 @@ function App() {
 
   return (
     <>
-
+      <h1 className='text-3xl bg-orange-500 rounded-lg py-3 '>Currency Converter App with chai</h1>
     </>
   )
 }
