@@ -13,6 +13,10 @@ function App() {
   const updateToDo = (id, todo) => {
     setToDos((prev) => prev.map((prevTodo) => (prevTodo.id === id ? todo : prevTodo)))
   }
+  // used Filter method bcz map is not suitable for this function
+  const deleteToDo = (id) => {
+    setToDos((prev) => prev.filter((todo) => todo !== id))
+  }
 
   return (
     <ToDoProvider>
