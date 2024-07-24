@@ -18,6 +18,10 @@ function App() {
     setToDos((prev) => prev.filter((todo) => todo !== id))
   }
 
+  const toogleToDo = (id) => {
+    setToDos((prev) => prev.map((prevTodo) => prevTodo === id ? { ...prevTodo, completed: !prevTodo.completed } : prevTodo))
+  }
+
   return (
     <ToDoProvider>
       <div className="bg-[#172842] min-h-screen py-8">
