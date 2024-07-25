@@ -9,7 +9,7 @@ export const ToDoContext = createContext({
     addToDo: (todo) => { },
     updateToDo: (id, todo) => { },
     deleteToDo: (id) => { },
-    toggleToDo: (id) => { },
+    toggleToDo: (id) => { }
 })
 
 export const useToDo = () => {
