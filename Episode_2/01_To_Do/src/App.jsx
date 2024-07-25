@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
@@ -23,6 +23,18 @@ function App() {
       { ...prevTodo, completed: !prevTodo.completed } :
       prevTodo))
   }
+
+  useEffect(() => {
+    const todos = JSON.parse(localStorage.getItem("todos"));
+    if (todos && todos > 0) {
+      setToDos(todos)
+    }
+  }, [])
+
+
+  useEffect(() => {
+    localStorage.setItem("todos", JSON.stringify("todos"));
+  }, [todos])
 
   return (
     <ToDoProvider>
