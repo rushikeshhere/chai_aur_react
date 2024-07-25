@@ -19,7 +19,9 @@ function App() {
   }
 
   const toogleToDo = (id) => {
-    setToDos((prev) => prev.map((prevTodo) => prevTodo === id ? { ...prevTodo, completed: !prevTodo.completed } : prevTodo))
+    setToDos((prev) => prev.map((prevTodo) => prevTodo === id ?
+      { ...prevTodo, completed: !prevTodo.completed } :
+      prevTodo))
   }
 
   return (
